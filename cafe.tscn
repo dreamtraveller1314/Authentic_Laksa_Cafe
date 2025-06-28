@@ -1,0 +1,228 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://download (3).png" type="Texture2D" id=1]
+[ext_resource path="res://cafe.gd" type="Script" id=2]
+[ext_resource path="res://pixilart-layers (1)/pixil-layer-8.png" type="Texture2D" id=3]
+[ext_resource path="res://pixilart-layers (1)/pixil-layer-6.png" type="Texture2D" id=4]
+[ext_resource path="res://pixilart-layers (1)/pixil-layer-10.png" type="Texture2D" id=5]
+[ext_resource path="res://pixilart-layers (1)/pixil-layer-9.png" type="Texture2D" id=6]
+[ext_resource path="res://pixilart-layers (1)/pixil-layer-3.png" type="Texture2D" id=7]
+[ext_resource path="res://pixilart-layers (1)/pixil-layer-4.png" type="Texture2D" id=8]
+[ext_resource path="res://pixilart-layers (1)/pixil-layer-7.png" type="Texture2D" id=9]
+[ext_resource path="res://pixilart-layers (1)/pixil-layer-2.png" type="Texture2D" id=10]
+[ext_resource path="res://RichTextLabel.gd" type="Script" id=11]
+[ext_resource path="res://pixilart-layers (1)/pixil-frame-0 (4).png" type="Texture2D" id=12]
+[ext_resource path="res://mixkit-coins-handling-1939.wav" type="AudioStream" id=13]
+[ext_resource path="res://congratulation.tscn" type="PackedScene" id=14]
+[ext_resource path="res://PressStart2P-Regular.ttf" type="FontFile" id=15]
+[ext_resource path="res://download (2).png" type="Texture2D" id=16]
+
+[sub_resource type="FontFile" id=1]
+font_data = ExtResource( 15 )
+
+[sub_resource type="FontFile" id=2]
+font_data = ExtResource( 15 )
+
+[sub_resource type="FontFile" id=3]
+font_data = ExtResource( 15 )
+
+[node name="Cafe" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2( 642.5, 360.5 )
+scale = Vector2( 1.05551, 1.07185 )
+texture = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="."]
+offset_left = 38.0
+offset_top = 371.0
+offset_right = 202.0
+offset_bottom = 522.0
+toggle_mode = true
+action_mode = 0
+icon = ExtResource( 8 )
+flat = true
+expand_icon = true
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 33.0
+offset_top = 531.0
+offset_right = 199.0
+offset_bottom = 682.0
+icon = ExtResource( 7 )
+flat = true
+expand_icon = true
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 259.0
+offset_top = 534.0
+offset_right = 463.0
+offset_bottom = 708.0
+icon = ExtResource( 12 )
+flat = true
+expand_icon = true
+
+[node name="Button4" type="Button" parent="."]
+offset_left = 256.0
+offset_top = 369.0
+offset_right = 481.0
+offset_bottom = 520.0
+icon = ExtResource( 9 )
+flat = true
+expand_icon = true
+
+[node name="Button5" type="Button" parent="."]
+offset_left = 833.0
+offset_top = 539.0
+offset_right = 1053.0
+offset_bottom = 671.0
+icon = ExtResource( 3 )
+flat = true
+expand_icon = true
+
+[node name="Button6" type="Button" parent="."]
+offset_left = 839.0
+offset_top = 382.0
+offset_right = 990.0
+offset_bottom = 541.0
+icon = ExtResource( 6 )
+flat = true
+expand_icon = true
+
+[node name="Button7" type="Button" parent="."]
+offset_left = 1059.0
+offset_top = 380.0
+offset_right = 1209.0
+offset_bottom = 549.0
+icon = ExtResource( 5 )
+flat = true
+expand_icon = true
+
+[node name="Button8" type="Button" parent="."]
+offset_left = 1048.0
+offset_top = 582.0
+offset_right = 1124.0
+offset_bottom = 604.0
+scale = Vector2( 3, 3 )
+theme_override_colors/font_disabled_color = Color( 1, 0.933333, 0.933333, 1 )
+theme_override_colors/font_focus_color = Color( 1, 1, 1, 1 )
+theme_override_colors/font_color = Color( 1, 0, 0, 1 )
+theme_override_colors/font_hover_color = Color( 1, 1, 1, 1 )
+theme_override_colors/font_pressed_color = Color( 1, 1, 1, 1 )
+theme_override_fonts/font = SubResource( 1 )
+text = "Done"
+flat = true
+expand_icon = true
+
+[node name="Sprite2" type="Sprite2D" parent="."]
+position = Vector2( 638.4, 484 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 10 )
+
+[node name="Sprite3" type="Sprite2D" parent="."]
+position = Vector2( 638.4, 484 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 7 )
+
+[node name="Sprite4" type="Sprite2D" parent="."]
+position = Vector2( 638.4, 484 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 8 )
+
+[node name="Sprite5" type="Sprite2D" parent="."]
+position = Vector2( 638.4, 484 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 4 )
+
+[node name="Sprite6" type="Sprite2D" parent="."]
+position = Vector2( 622, 427 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 9 )
+
+[node name="Sprite7" type="Sprite2D" parent="."]
+position = Vector2( 657, 516 )
+scale = Vector2( 0.194188, 0.2 )
+texture = ExtResource( 3 )
+
+[node name="Sprite8" type="Sprite2D" parent="."]
+position = Vector2( 695, 470 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 6 )
+
+[node name="Sprite9" type="Sprite2D" parent="."]
+position = Vector2( 589, 514 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 5 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 298.0
+offset_top = 80.0
+offset_right = 936.0
+offset_bottom = 296.0
+color = Color( 0.737255, 0.737255, 0.737255, 1 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+anchor_right = 0.624
+offset_left = 327.0
+offset_top = 152.0
+offset_right = 473.0
+offset_bottom = 177.0
+scale = Vector2( 4, 4 )
+theme_override_fonts/normal_font = SubResource( 2 )
+bbcode_enabled = true
+text = "[rainbow] 0 order"
+tab_size = 6
+text = " 0 order"
+script = ExtResource( 11 )
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+offset_left = 734.0
+offset_top = 7.0
+offset_right = 896.0
+offset_bottom = 30.0
+scale = Vector2( 3, 3 )
+theme_override_fonts/normal_font = SubResource( 3 )
+bbcode_enabled = true
+text = "Money: 0"
+tab_size = 6
+text = "Money: 0"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 13 )
+
+[node name="Timer2" type="Timer" parent="."]
+wait_time = 120.0
+
+[node name="Button9" type="Button" parent="."]
+process_mode = 3
+offset_left = -60.0
+offset_top = -42.0
+offset_right = 1408.0
+offset_bottom = 793.0
+flat = true
+
+[node name="Sprite10" type="Sprite2D" parent="."]
+process_mode = 3
+position = Vector2( 631, 372 )
+scale = Vector2( 0.690255, 0.690255 )
+texture = ExtResource( 16 )
+
+[node name="Node2D" parent="." instance=ExtResource( 14 )]
+process_mode = 3
+visible = false
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_Button4_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_Button5_pressed"]
+[connection signal="pressed" from="Button6" to="." method="_on_Button6_pressed"]
+[connection signal="pressed" from="Button7" to="." method="_on_Button7_pressed"]
+[connection signal="pressed" from="Button8" to="." method="_on_Button8_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="Timer2" to="." method="_on_Timer2_timeout"]
+[connection signal="pressed" from="Button9" to="." method="_on_Button9_pressed"]

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://CMJ - 所念皆星河【動態歌詞_Lyrics Video】.mp3" type="AudioStream" id=1]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+process_mode = 3
+stream = ExtResource( 1 )
+volume_db = -20.0
+autoplay = true
