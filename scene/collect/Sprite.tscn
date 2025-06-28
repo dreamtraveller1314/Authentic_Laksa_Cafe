@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource type="Texture2D" uid="uid://bpmot4mtsyb1y" path="res://assets/picture/Pixilart Sprite Sheet (2).png" id="1"]
+[ext_resource type="Script" uid="uid://drofu0ii1ekgg" path="res://scene/collect/Sprite.gd" id="2"]
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 1536, 864 )
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1536, 0, 1536, 864 )
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+position = Vector2( 494, 285 )
+scale = Vector2( 0.663973, 0.661626 )
+frames = SubResource( 3 )
+frame = 1
+playing = true
+offset = Vector2( 18, 18 )
+script = ExtResource( 2 )

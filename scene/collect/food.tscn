@@ -1,0 +1,89 @@
+[gd_scene load_steps=11 format=3 uid="uid://bbkqc0ihu2a3i"]
+
+[ext_resource type="Texture2D" uid="uid://cuphk85g5vxiy" path="res://assets/picture/pixilart-layers (1)/pixil-frame-0 (4).png" id="1"]
+[ext_resource type="Texture2D" uid="uid://deharun5anev8" path="res://assets/picture/pixilart-layers (1)/pixil-layer-9.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://4mk5aet7igit" path="res://assets/picture/pixilart-layers (1)/pixil-layer-10.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://cs42g8jelpfrn" path="res://assets/picture/pixilart-layers (1)/pixil-layer-3.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://dpmi6h4itjfti" path="res://assets/picture/pixilart-layers (1)/pixil-layer-7.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://qq4sddqddmgm" path="res://assets/picture/pixilart-layers (1)/pixil-layer-4.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://befc1j5rx507u" path="res://assets/picture/pixilart-layers (1)/pixil-layer-8.png" id="7"]
+[ext_resource type="Script" uid="uid://bvbio18nkipbh" path="res://scene/collect/food.gd" id="8"]
+
+[sub_resource type="SpriteFrames" id="2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4")
+}],
+"loop": true,
+"name": &"1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3")
+}],
+"loop": true,
+"name": &"2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7")
+}],
+"loop": true,
+"name": &"3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2")
+}],
+"loop": true,
+"name": &"4",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1")
+}],
+"loop": true,
+"name": &"5",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6")
+}],
+"loop": true,
+"name": &"6",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5")
+}],
+"loop": true,
+"name": &"7",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(480.802, 496.428)
+
+[node name="food" type="Area2D"]
+script = ExtResource("8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(188.556, 91.8191)
+scale = Vector2(0.0964254, 0.0993056)
+sprite_frames = SubResource("2")
+animation = &"1"
+offset = Vector2(2810.66, 2181.96)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(460, 308.375)
+scale = Vector2(0.207986, 0.207986)
+shape = SubResource("1")
+
+[connection signal="body_entered" from="." to="." method="_on_food_body_entered"]

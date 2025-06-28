@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=3 uid="uid://bckajc62xv77v"]
+
+[ext_resource type="Texture2D" uid="uid://75ms251xr18h" path="res://assets/picture/pixilart-drawing (1).png" id="1"]
+[ext_resource type="Script" uid="uid://bmai6o6rptwr3" path="res://scene/congratulation/congratulation.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://01pbaec3b0gy" path="res://assets/picture/retry.png" id="4"]
+[ext_resource type="FontFile" uid="uid://cgb7u3n20pjqj" path="res://assets/font/PressStart2P-Regular.ttf" id="5"]
+
+[sub_resource type="FontFile" id="1"]
+fallbacks = Array[Font]([ExtResource("5")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(647, 356)
+scale = Vector2(0.50332, 0.508333)
+texture = ExtResource("1")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 403.0
+offset_top = 536.0
+offset_right = 508.0
+offset_bottom = 570.0
+scale = Vector2(5, 5)
+size_flags_stretch_ratio = 0.0
+icon = ExtResource("4")
+flat = true
+expand_icon = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+light_mask = 0
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 289.0
+offset_top = 306.0
+offset_right = 562.0
+offset_bottom = 401.0
+scale = Vector2(2.8, 2.87)
+theme_override_colors/default_color = Color(1, 0.345098, 0.882353, 1)
+theme_override_constants/line_separation = 6
+theme_override_fonts/normal_font = SubResource("1")
+bbcode_enabled = true
+text = "You have earn $0 in one minute"
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
