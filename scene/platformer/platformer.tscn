@@ -1,10 +1,10 @@
-[gd_scene load_steps=23 format=4 uid="uid://in8y723d6p7b"]
+[gd_scene load_steps=22 format=4 uid="uid://in8y723d6p7b"]
 
 [ext_resource type="Texture2D" uid="uid://wchct3gf3jub" path="res://assets/picture/Tile.svg" id="1_05mxj"]
 [ext_resource type="Script" uid="uid://2g4rx5b0nwvx" path="res://scene/platformer/platformer.gd" id="1_s7amt"]
 [ext_resource type="Texture2D" uid="uid://cgwhs0jl0o87e" path="res://assets/picture/platformer background.png" id="1_ye5iy"]
 [ext_resource type="Script" uid="uid://c57hohke4pgr4" path="res://scene/platformer/player_2.gd" id="2_ye5iy"]
-[ext_resource type="Texture2D" uid="uid://bpmot4mtsyb1y" path="res://assets/picture/sprite collect.png" id="3_g50y5"]
+[ext_resource type="Texture2D" uid="uid://frl21vyakdbm" path="res://assets/picture/player_side.png" id="4_4oqdj"]
 [ext_resource type="Script" uid="uid://blfmlr3rvho4y" path="res://scene/platformer/collect_food.gd" id="5_weih6"]
 [ext_resource type="PackedScene" uid="uid://c37fuawp5yq7x" path="res://scene/platformer/collect_food.tscn" id="6_g3ft3"]
 [ext_resource type="Script" uid="uid://21u5dgjvhnoj" path="res://scene/platformer/collect_food2.gd" id="6_ndshc"]
@@ -13,29 +13,22 @@
 [ext_resource type="Script" uid="uid://dijp4mmb8nlwa" path="res://scene/platformer/collect_food5.gd" id="11_qijtm"]
 [ext_resource type="Script" uid="uid://v3rnyc608spl" path="res://scene/platformer/collect_food6.gd" id="12_4oqdj"]
 [ext_resource type="Script" uid="uid://drfac37v6c7gb" path="res://scene/platformer/collect_food7.gd" id="13_1l4d7"]
-[ext_resource type="Texture2D" uid="uid://d0ecddu6c8jfr" path="res://assets/picture/rule 2.png" id="14_qijtm"]
+[ext_resource type="Texture2D" uid="uid://bqwr3vuqr3kts" path="res://assets/picture/rule 1.png" id="15_1l4d7"]
 [ext_resource type="Texture2D" uid="uid://drcsfix00pte3" path="res://assets/picture/rule 3.png" id="15_4oqdj"]
 [ext_resource type="AudioStream" uid="uid://dtf563x33p0u8" path="res://assets/music/earn point.wav" id="16_4oqdj"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_fd758"]
-atlas = ExtResource("3_g50y5")
-region = Rect2(0, 0, 1536, 864)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_uew18"]
-atlas = ExtResource("3_g50y5")
-region = Rect2(1536, 0, 1536, 864)
+[sub_resource type="AtlasTexture" id="AtlasTexture_4oqdj"]
+atlas = ExtResource("4_4oqdj")
+region = Rect2(203, 87, 50, 130)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_rjupa"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_fd758")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_uew18")
+"texture": SubResource("AtlasTexture_4oqdj")
 }],
 "loop": true,
-"name": &"default",
+"name": &"new_animation",
 "speed": 5.0
 }]
 
@@ -574,8 +567,9 @@ script = ExtResource("2_ye5iy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player2"]
 position = Vector2(103, 634)
-scale = Vector2(0.17806, 0.167245)
+scale = Vector2(0.543731, 0.510706)
 sprite_frames = SubResource("SpriteFrames_rjupa")
+animation = &"new_animation"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player2"]
 position = Vector2(87, 637.5)
@@ -617,22 +611,22 @@ script = ExtResource("12_4oqdj")
 script = ExtResource("13_1l4d7")
 
 [node name="menu 2" type="Sprite2D" parent="."]
-position = Vector2(419, 626)
-scale = Vector2(0.579184, 0.4358)
+position = Vector2(417.5, 627.5)
+scale = Vector2(0.479184, 0.349293)
 texture = ExtResource("15_4oqdj")
 
 [node name="menu" type="Sprite2D" parent="."]
 position = Vector2(417.824, 627.812)
 rotation = -0.00394738
 scale = Vector2(0.615554, 0.460128)
-texture = ExtResource("14_qijtm")
+texture = ExtResource("15_1l4d7")
 
 [node name="Button" type="Button" parent="."]
 process_mode = 3
-offset_left = -401.0
-offset_top = -595.0
-offset_right = 3231.0
-offset_bottom = 1674.0
+offset_left = -346.0
+offset_top = -582.0
+offset_right = 3286.0
+offset_bottom = 1687.0
 flat = true
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]

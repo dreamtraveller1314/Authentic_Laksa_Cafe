@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqnx6lu1a5jfj"
-path="res://.godot/imported/rule 2.png-87d3a40e9762a06e1b4c9793877d7a73.ctex"
+uid="uid://frl21vyakdbm"
+path="res://.godot/imported/player_side.png-41927b248f708d23d4d9d89598e6c95a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/picture/rule 2.png"
-dest_files=["res://.godot/imported/rule 2.png-87d3a40e9762a06e1b4c9793877d7a73.ctex"]
+source_file="res://assets/picture/player_side.png"
+dest_files=["res://.godot/imported/player_side.png-41927b248f708d23d4d9d89598e6c95a.ctex"]
 
 [params]
 

@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://us7dbxu1lss8" path="res://assets/picture/runway.png" id="1"]
 [ext_resource type="Script" uid="uid://cfnqkvgppdy2y" path="res://scene/collect/Control.gd" id="2"]
-[ext_resource type="Texture2D" uid="uid://d0ecddu6c8jfr" path="res://assets/picture/rule 2.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://dqnx6lu1a5jfj" path="res://assets/picture/rule 2.png" id="3"]
 [ext_resource type="PackedScene" uid="uid://w7ungghmc1rg" path="res://scene/collect/player.tscn" id="5"]
 [ext_resource type="PackedScene" uid="uid://bbkqc0ihu2a3i" path="res://scene/collect/food.tscn" id="6"]
 [ext_resource type="PackedScene" uid="uid://cy2j6dwb5om0h" path="res://scene/collect/enemy.tscn" id="7"]
