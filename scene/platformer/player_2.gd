@@ -5,7 +5,7 @@ const JUMP_VELOCITY = -900.0
 
 
 func _physics_process(delta: float) -> void:
-	if not is_on_floor():
+	if not is_on_floor() and get_parent().menu > 1:
 		velocity += get_gravity() * delta
 
 	if Input.is_action_just_pressed("jump") and is_on_floor():

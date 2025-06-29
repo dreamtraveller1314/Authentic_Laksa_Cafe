@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=4 uid="uid://in8y723d6p7b"]
+[gd_scene load_steps=23 format=4 uid="uid://in8y723d6p7b"]
 
 [ext_resource type="Texture2D" uid="uid://wchct3gf3jub" path="res://assets/picture/Tile.svg" id="1_05mxj"]
 [ext_resource type="Script" uid="uid://2g4rx5b0nwvx" path="res://scene/platformer/platformer.gd" id="1_s7amt"]
@@ -13,6 +13,9 @@
 [ext_resource type="Script" uid="uid://dijp4mmb8nlwa" path="res://scene/platformer/collect_food5.gd" id="11_qijtm"]
 [ext_resource type="Script" uid="uid://v3rnyc608spl" path="res://scene/platformer/collect_food6.gd" id="12_4oqdj"]
 [ext_resource type="Script" uid="uid://drfac37v6c7gb" path="res://scene/platformer/collect_food7.gd" id="13_1l4d7"]
+[ext_resource type="Texture2D" uid="uid://d0ecddu6c8jfr" path="res://assets/picture/rule 2.png" id="14_qijtm"]
+[ext_resource type="Texture2D" uid="uid://drcsfix00pte3" path="res://assets/picture/rule 3.png" id="15_4oqdj"]
+[ext_resource type="AudioStream" uid="uid://dtf563x33p0u8" path="res://assets/music/earn point.wav" id="16_4oqdj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fd758"]
 atlas = ExtResource("3_g50y5")
@@ -104,9 +107,9 @@ texture_region_size = Vector2i(40, 40)
 23:2/0 = 0
 24:2/0 = 0
 2:3/0 = 0
-2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-20.2331, -19.7551, 19.9144, -19.7551, 19.9144, 20.0737, -20.2331, 20.0737)
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-20.6838, -20.5039, 20.5039, -19.9643, 19.9643, 9.1728, -21.0435, 8.09364)
 3:3/0 = 0
-3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-20.2331, -19.7551, 19.9144, -19.7551, 19.9144, 20.0737, -20.2331, 20.0737)
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-20.6838, -20.5039, 20.5039, -19.9643, 19.9643, 9.1728, -21.0435, 8.09364)
 4:3/0 = 0
 4:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-20.2331, -19.7551, 19.9144, -19.7551, 19.9144, 20.0737, -20.2331, 20.0737)
 9:3/0 = 0
@@ -548,7 +551,7 @@ texture_region_size = Vector2i(40, 40)
 1:2/0 = 0
 1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-20.2331, -19.7551, 19.9144, -19.7551, 19.9144, 20.0737, -20.2331, 20.0737)
 1:3/0 = 0
-1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-20.2331, -19.7551, 19.9144, -19.7551, 19.9144, 20.0737, -20.2331, 20.0737)
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-20.6838, -20.5039, 20.5039, -19.9643, 19.9643, 9.1728, -21.0435, 8.09364)
 0:3/0 = 0
 0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-20.2331, -19.7551, 19.9144, -19.7551, 19.9144, 20.0737, -20.2331, 20.0737)
 0:2/0 = 0
@@ -612,3 +615,28 @@ script = ExtResource("12_4oqdj")
 
 [node name="collect_food7" parent="." instance=ExtResource("6_g3ft3")]
 script = ExtResource("13_1l4d7")
+
+[node name="menu 2" type="Sprite2D" parent="."]
+position = Vector2(419, 626)
+scale = Vector2(0.579184, 0.4358)
+texture = ExtResource("15_4oqdj")
+
+[node name="menu" type="Sprite2D" parent="."]
+position = Vector2(417.824, 627.812)
+rotation = -0.00394738
+scale = Vector2(0.615554, 0.460128)
+texture = ExtResource("14_qijtm")
+
+[node name="Button" type="Button" parent="."]
+process_mode = 3
+offset_left = -401.0
+offset_top = -595.0
+offset_right = 3231.0
+offset_bottom = 1674.0
+flat = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("16_4oqdj")
+max_distance = 4096.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

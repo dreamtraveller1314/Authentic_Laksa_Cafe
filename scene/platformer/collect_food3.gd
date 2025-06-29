@@ -8,7 +8,6 @@ func _ready():
 	position.x = 2300
 	position.y = -6
 	$collect_food.animation = "3"
-	print("position: ", position)
 	body_entered.connect(_on_Coin_body_entered)
 	pass
 
@@ -16,5 +15,7 @@ func _ready():
 func _on_Coin_body_entered(body):
 	if body.name == "player2":
 		visible = false
+		position.x = -100
+		position.y = 100
 		get_parent()._addscore()
 	pass

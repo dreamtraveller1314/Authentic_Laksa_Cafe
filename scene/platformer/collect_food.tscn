@@ -76,7 +76,7 @@ size = Vector2(421.904, 350.083)
 position = Vector2(-155.224, 625.166)
 scale = Vector2(0.0789516, 0.0700248)
 sprite_frames = SubResource("SpriteFrames_ny3nv")
-animation = &"4"
+animation = &"2"
 offset = Vector2(2810.66, 2181.96)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
