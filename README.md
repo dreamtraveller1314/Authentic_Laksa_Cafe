@@ -2,6 +2,9 @@
 ## Discover the Flavor of Penang!
 "Authentic Laksa Cafe" is a delightful and engaging game developed using Godot, designed to introduce players to the vibrant and unique flavors of Penang's famous dish: Laksa! Embark on a culinary adventure as you gather ingredients and master the art of making this iconic Malaysian noodle soup.
 
+## Try it now
+https://dreamtraveller1314.itch.io/authentic-laksa-cafe
+
 ## What is Laksa?
 Laksa is a popular spicy noodle soup from the Peranakan cuisine, which is a fusion of Chinese and Malay culinary traditions. While many variations exist across Southeast Asia, Penang Laksa, or Asam Laksa, is particularly renowned for its rich, sour, and spicy fish-based broth, typically made with mackerel. It's infused with aromatic herbs like ginger flower (bunga kantan), mint, and lemongrass, and served with thick rice noodles, fresh vegetables, and often a dollop of pungent shrimp paste (hae ko) for an extra kick. It's a truly unforgettable taste of Malaysia!
 ![image](https://github.com/user-attachments/assets/43ceec12-ffcc-4990-bdfd-b0790d6470d5)
@@ -59,9 +62,7 @@ Congratulations! You've collected enough ingredients to open your very own Laksa
 
 ![image](https://github.com/user-attachments/assets/6f6e6ba9-f385-4cf5-b3dd-66d4d80d56cb)
 
-
-
-## How to Play
+## How to Play (Window)
 https://github.com/dreamtraveller1314/Authentic_Laksa_Cafe/blob/6075f10eae74613a93cd904634594ddc9972fdcd/Step%20to%20open%20the%20file.pdf
 
 ## Any bugs, suggestion or feature requests post on the "Issues" tab in the GitHub
