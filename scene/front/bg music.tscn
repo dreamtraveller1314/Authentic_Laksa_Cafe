@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://ds6qqr36wvab1"]
 
-[ext_resource type="AudioStream" uid="uid://cs11qn6ynmoqt" path="res://assets/music/CMJ - 所念皆星河【動態歌詞_Lyrics Video】.mp3" id="1"]
+[ext_resource type="AudioStream" uid="uid://cs11qn6ynmoqt" path="res://assets/music/bgm.mp3" id="1"]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer"]
 process_mode = 3

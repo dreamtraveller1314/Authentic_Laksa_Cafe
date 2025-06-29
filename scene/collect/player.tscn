@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://w7ungghmc1rg"]
 
-[ext_resource type="Texture2D" uid="uid://bpmot4mtsyb1y" path="res://assets/picture/Pixilart Sprite Sheet (2).png" id="1"]
+[ext_resource type="Texture2D" uid="uid://bpmot4mtsyb1y" path="res://assets/picture/sprite collect.png" id="1"]
 [ext_resource type="Script" uid="uid://cgyyxa3pksxr8" path="res://scene/collect/player.gd" id="2"]
 
 [sub_resource type="RectangleShape2D" id="1"]
@@ -39,3 +39,5 @@ shape = SubResource("1")
 position = Vector2(574, 520)
 scale = Vector2(0.403624, 0.363902)
 sprite_frames = SubResource("4")
+frame = 1
+speed_scale = 0.5

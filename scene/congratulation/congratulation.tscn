@@ -1,12 +1,15 @@
 [gd_scene load_steps=6 format=3 uid="uid://bckajc62xv77v"]
 
-[ext_resource type="Texture2D" uid="uid://75ms251xr18h" path="res://assets/picture/pixilart-drawing (1).png" id="1"]
+[ext_resource type="Texture2D" uid="uid://75ms251xr18h" path="res://assets/picture/congratulation.png" id="1"]
 [ext_resource type="Script" uid="uid://bmai6o6rptwr3" path="res://scene/congratulation/congratulation.gd" id="2"]
 [ext_resource type="Texture2D" uid="uid://01pbaec3b0gy" path="res://assets/picture/retry.png" id="4"]
 [ext_resource type="FontFile" uid="uid://cgb7u3n20pjqj" path="res://assets/font/PressStart2P-Regular.ttf" id="5"]
 
 [sub_resource type="FontFile" id="1"]
 fallbacks = Array[Font]([ExtResource("5")])
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/16/0/ascent = 0.0
 cache/0/16/0/descent = 0.0
 cache/0/16/0/underline_position = 0.0

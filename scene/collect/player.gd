@@ -19,7 +19,6 @@ func _physics_process(delta):
 			
 	set_velocity(gravity)
 	move_and_slide()
-	
 pass
 
 func add_score():

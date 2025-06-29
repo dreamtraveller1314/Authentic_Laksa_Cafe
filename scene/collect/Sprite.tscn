@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource type="Texture2D" uid="uid://bpmot4mtsyb1y" path="res://assets/picture/Pixilart Sprite Sheet (2).png" id="1"]
+[ext_resource type="Texture2D" uid="uid://bpmot4mtsyb1y" path="res://assets/picture/sprite collect.png" id="1"]
 [ext_resource type="Script" uid="uid://drofu0ii1ekgg" path="res://scene/collect/Sprite.gd" id="2"]
 
 [sub_resource type="AtlasTexture" id=1]

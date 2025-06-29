@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://b12egpaeomths"]
 
-[ext_resource type="Texture2D" uid="uid://dv8ropmknsilg" path="res://assets/picture/pixil-frame-0 (2).png" id="1"]
+[ext_resource type="Texture2D" uid="uid://dv8ropmknsilg" path="res://assets/picture/front.png" id="1"]
 [ext_resource type="Script" uid="uid://dip3445g3ac2c" path="res://scene/front/front.gd" id="2"]
-[ext_resource type="Texture2D" uid="uid://bls3aqwvnbk04" path="res://assets/picture/download.jpg" id="3"]
+[ext_resource type="Texture2D" uid="uid://bls3aqwvnbk04" path="res://assets/picture/start.jpg" id="3"]
 
 [sub_resource type="Theme" id="1"]
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://cy2j6dwb5om0h"]
 
 [ext_resource type="Script" uid="uid://brjkgr50mfcbu" path="res://scene/collect/enemy.gd" id="1"]
-[ext_resource type="Texture2D" uid="uid://d1pvkcqnvfinu" path="res://assets/picture/70cc381b8b97000f19a0b2362f20b7c6.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://d1pvkcqnvfinu" path="res://assets/picture/enemy.png" id="2"]
 
 [sub_resource type="AtlasTexture" id="7"]
 atlas = ExtResource("2")
@@ -100,7 +100,7 @@ script = ExtResource("1")
 position = Vector2(654, 364)
 scale = Vector2(3.80208, 3.80208)
 sprite_frames = SubResource("9")
-animation = &"7"
+animation = &"1"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(653.521, 364.021)

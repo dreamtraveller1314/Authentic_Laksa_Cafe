@@ -1,0 +1,86 @@
+[gd_scene load_steps=10 format=3 uid="uid://c37fuawp5yq7x"]
+
+[ext_resource type="Texture2D" uid="uid://cs42g8jelpfrn" path="res://assets/picture/ingredient/soup.png" id="1_7ygig"]
+[ext_resource type="Texture2D" uid="uid://4mk5aet7igit" path="res://assets/picture/ingredient/pineapple.png" id="2_7di5i"]
+[ext_resource type="Texture2D" uid="uid://befc1j5rx507u" path="res://assets/picture/ingredient/mintleaves.png" id="3_tsmgw"]
+[ext_resource type="Texture2D" uid="uid://deharun5anev8" path="res://assets/picture/ingredient/onion.png" id="4_ydeou"]
+[ext_resource type="Texture2D" uid="uid://cuphk85g5vxiy" path="res://assets/picture/ingredient/chili.png" id="5_tku1q"]
+[ext_resource type="Texture2D" uid="uid://qq4sddqddmgm" path="res://assets/picture/ingredient/noodle.png" id="6_hlbcj"]
+[ext_resource type="Texture2D" uid="uid://dpmi6h4itjfti" path="res://assets/picture/ingredient/lettuce.png" id="7_6hjjs"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ny3nv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_7ygig")
+}],
+"loop": true,
+"name": &"1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_7di5i")
+}],
+"loop": true,
+"name": &"2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_tsmgw")
+}],
+"loop": true,
+"name": &"3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_ydeou")
+}],
+"loop": true,
+"name": &"4",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_tku1q")
+}],
+"loop": true,
+"name": &"5",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_hlbcj")
+}],
+"loop": true,
+"name": &"6",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_6hjjs")
+}],
+"loop": true,
+"name": &"7",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sf5n2"]
+size = Vector2(421.904, 350.083)
+
+[node name="collect_food" type="Area2D"]
+
+[node name="collect_food" type="AnimatedSprite2D" parent="."]
+position = Vector2(-155.224, 625.166)
+scale = Vector2(0.0789516, 0.0700248)
+sprite_frames = SubResource("SpriteFrames_ny3nv")
+animation = &"4"
+offset = Vector2(2810.66, 2181.96)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(68.125, 779.594)
+scale = Vector2(0.207986, 0.207986)
+shape = SubResource("RectangleShape2D_sf5n2")
+debug_color = Color(2.40654e-06, 0.599403, 0.703429, 0.42)

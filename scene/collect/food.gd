@@ -21,7 +21,7 @@ pass
 func reset():
 	visible=true
 	position.y = -800
-	position.x =-randf_range(30,-110)
+	position.x = 500
 	costume = randf_range(1,7)
 	y = randf_range(5,9)
 	if costume <2:
@@ -45,5 +45,4 @@ func reset():
 func _on_food_body_entered(body):
 	visible = false
 	reset()
-	body.add_score()
 	pass # Replace with function body.
