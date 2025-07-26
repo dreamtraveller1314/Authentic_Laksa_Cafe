@@ -13,6 +13,7 @@ config_version=5
 config/name="Authentic Laksa Cafe"
 run/main_scene="res://scene/front/Front.tscn"
 config/features=PackedStringArray("4.4")
+config/icon="uid://bxp8a356r4klx"
 
 [autoload]
 
