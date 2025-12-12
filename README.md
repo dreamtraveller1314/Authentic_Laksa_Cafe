@@ -5,6 +5,9 @@
 ## Try it now
 https://dreamtraveller1314.itch.io/authentic-laksa-cafe
 
+## Demo Video
+https://youtu.be/E56L_JC6Itw
+
 ## What is Laksa?
 Laksa is a popular spicy noodle soup from the Peranakan cuisine, which is a fusion of Chinese and Malay culinary traditions. While many variations exist across Southeast Asia, Penang Laksa, or Asam Laksa, is particularly renowned for its rich, sour, and spicy fish-based broth, typically made with mackerel. It's infused with aromatic herbs like ginger flower (bunga kantan), mint, and lemongrass, and served with thick rice noodles, fresh vegetables, and often a dollop of pungent shrimp paste (hae ko) for an extra kick. It's a truly unforgettable taste of Malaysia!
 ![image](https://github.com/user-attachments/assets/43ceec12-ffcc-4990-bdfd-b0790d6470d5)
