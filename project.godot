@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Authentic Laksa Cafe"
 run/main_scene="res://scene/front/Front.tscn"
-config/features=PackedStringArray("4.4")
+config/features=PackedStringArray("4.5")
 config/icon="uid://bxp8a356r4klx"
 
 [autoload]
@@ -23,7 +23,7 @@ BgMusic="*res://scene/front/bg music.tscn"
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
-window/stretch/mode="2d"
+window/stretch/mode="viewport"
 
 [global]
 
